@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <style>
+
+        .wocao.www.dsa{
+            color: rgb(255, 0, 0);
+        }
+        div > p {
+            color: orange;/*子元素选择器*/
+        }
+        div span{
+            color: greenyellow;
+        }
+        p + div{
+            color: #000;
+        }
+        p[title]{
+            color: royalblue;/*属性选择器*/
+        }
+        ul > li:first-of-type{
+            color: saddlebrown;
+        }
+        ul > li:nth-child(2n){
+            color: rgb(94, 255, 0);
+        }
+        ul > li:hover{
+            color: rgb(255, 0, 0);
+            background-color: black
+        }
+        li::selection{
+            font-size: 50px;
+        }
+    </style>
+</head>
+    
+<body>
+    <p class="wocao www dsa" >wocao</p>
+    <span> dbuisagiua</span>
+    <div>
+        <p title="sss"> 子元素</p>
+        <div><span>行内元素</span>兄弟元素</div>
+        <span>后代神婆阿</span>
+    </div>
+
+    <ul>
+        <li>1\sdadasd</li>
+        <li>2\s33dasd</li>
+        <li>4\sdadasd</li>
+    </ul>
+</body>
+
+</html>

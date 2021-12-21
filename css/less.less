@@ -1,0 +1,92 @@
+@a: 100px; //变量a的定义
+@c: box3;
+
+.box1 {
+    width: @a;
+    height: @a;
+
+    div {
+        width: 100%;
+        color: gray;
+    }
+
+    &:hover {
+        color: #000;
+    }
+
+    //&符号代表外围的那个
+    >.box5 {
+        background-color: saddlebrown;
+    }
+}
+
+//作为类名使用要这么用
+.@{c} {
+    width: @a;
+}
+
+@b: #bca;
+
+.box4 {
+    width: @a;
+    height: @a;
+    color: @b;
+    background-color: $color;
+
+}
+
+// 扩展 继承
+.p1 {
+    width: 100px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.p2:extend(p1) {
+    background-color: red;
+}
+
+// 或者直接写一个类名在里面
+.p3 {
+    .p1();
+}
+
+// 如果后面加个括号，说明这个是虚函数 是专门给后代继承和实现的
+// css文件里面不会出现这个p4
+.p4() {
+    width: 100px;
+    height: 200px;
+    background-color: royalblue;
+}
+
+.p5 {
+    .p4;
+    color: salmon;
+}
+
+// 这个混合函数 是可以进行传参的
+//  顺序传参 顺序赋值 也可以指定变量名进行赋值
+// 还可以指定默认值
+.test(@w) {
+    width: @w;
+    height: @w;
+    background-color: aliceblue;
+}
+
+.test2(@w, @color, @h) {
+    width: @w;
+    height: @h;
+    color: @color;
+}
+
+.test3(@w: 500px, @color: #111, @h: 200px) {
+    width: @w;
+    height: @h;
+    color: @color;
+}
+
+.p6 {
+    // .test(200px);
+    // .test2(@w:200px,@h:500px,@color:#112233);
+    .test3();
+}

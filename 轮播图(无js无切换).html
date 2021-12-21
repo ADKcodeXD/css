@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        
+        .img-list{
+            width: 620px;
+            height: 480px;
+            margin: 10px auto;
+            position: relative;
+        }
+        .img-list img{
+            width: 600px;
+            height: 480px;
+            
+        }
+        .img-list li{
+            position:absolute;
+            
+        }
+        .img-list li:nth-child(4){
+            z-index: 1;
+        }
+        .pointer{
+            position: absolute;
+            z-index: 1000;
+            bottom: 20px;
+            left: 30px;
+        }
+        .pointer a{
+            display: block;
+            float: left;
+            width: 15px;
+            height: 15px;
+            margin:0 4px;
+            border-radius: 50%;
+            background-color:rgb(238, 238, 238,0.8) ;
+        }
+        .pointer a:hover{
+            outline:solid white 2px;
+            background-color:rgb(238, 238, 238) ;
+        }
+        .pointer a:active{
+            outline:solid white 2px;
+            background-color: rgb(238, 238, 238);
+        }
+    </style>
+</head>
+<body>
+    <ul class="img-list">
+        <li><a href="#"><img src="./img/tumblr_or45w1ApEs1qlttiao1_1280.png" alt=""></a></li>
+        <li><a href="#"><img src="./img/65a957057ef830b1506dab0138f28f36.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/4.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/5.jpg" alt=""></a></li>
+        <li><a href="#"><img src="./img/tumblr_or45w1ApEs1qlttiao1_1280.png" alt=""></a></li>
+        <li><a href="#"><img src="./img/tumblr_or45w1ApEs1qlttiao1_1280.png" alt=""></a></li>
+        <li><a href="#"><img src="./img/tumblr_or45w1ApEs1qlttiao1_1280.png" alt=""></a></li>
+        <div class="pointer">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+    </ul>
+</body>
+</html>

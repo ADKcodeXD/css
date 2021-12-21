@@ -1,0 +1,47 @@
+.box1 {
+  width: 100px;
+  height: 100px;
+}
+.box1 div {
+  width: 100%;
+  color: gray;
+}
+.box1:hover {
+  color: #000;
+}
+.box1 > .box5 {
+  background-color: saddlebrown;
+}
+.box3 {
+  width: 100px;
+}
+.box4 {
+  width: 100px;
+  height: 100px;
+  color: #bca;
+  background-color: #bca;
+}
+.p1 {
+  width: 100px;
+  height: 200px;
+  background-color: royalblue;
+}
+.p2 {
+  background-color: red;
+}
+.p3 {
+  width: 100px;
+  height: 200px;
+  background-color: royalblue;
+}
+.p5 {
+  width: 100px;
+  height: 200px;
+  background-color: royalblue;
+  color: salmon;
+}
+.p6 {
+  width: 500px;
+  height: 200px;
+  color: #111;
+}

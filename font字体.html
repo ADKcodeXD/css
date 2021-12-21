@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体族</title> 
+    <script src="https://kit.fontawesome.com/ec48dbbfa4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./fontaweme/css/all.css">
+    <style>
+        li{
+            list-style: none;
+        }
+        li::before{
+            content: '\f358';
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900;
+        }
+        .font{
+            font-size: 50px;
+            line-height: 5;
+        }
+        .textalign{
+            width: 500px;
+            font-size: 30px;
+            text-align: center;
+        }
+        span{
+            border:solid red 1px;
+            font-size: 15px;
+            vertical-align: middle;
+        }
+        .font2{
+            width: 700px;
+            font-size: 50px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /*这样设置能让溢出的文字变成省略号*/
+            text-decoration: overline red;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        今天是十二月，卧槽你妈.todayis12monthsadada
+    </p>
+    <i class="fas fa-bell"></i><span>这是实例</span>
+    <ul>
+        <li>这是一个字</li>
+        <li>这也是一个子</li>
+        <li>所以到底是</li>
+        <li>要怎么样啊</li>
+        <li>我真的不知道</li>
+    </ul>
+    <div class="font">
+        今天天气不好，今天天气好，今天天气不哈，今天天气好
+    </div>
+    <div class="textalign">
+        这里是对齐方式，<span>这里也有</span>垂直对齐和水平对齐
+        怎么用呢？分别有很多种方式，比如说leftalign
+        centeralign，还有各种各样的align
+    </div>
+    <div class="font2">
+        jiasjfoijasfoijasoifjaoisfjoiajf
+        ioajsfoijasiofjasoifjaoisfjoiaj
+        fioajsiofjsiogniaongoiangoisngu
+        i9ejhtgoeiqhtgo
+    </div>
+</body>
+</html>

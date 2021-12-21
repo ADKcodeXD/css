@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+// 设计图的宽度
+@total-width:750;
+@center-width:(693/40rem);
+html{
+    font-size: (100vw/@total-width)*40 ;
+    /* 1rem=40px */
+    background-color: #eff0f4;
+}
+.w{
+    width: @center-width;
+    margin:  0 auto;
+}
+a{
+    text-decoration: none;
+}
+.top-wrapper:extend(.w){
+    
+    height: (175/40rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    a{
+        color: rgb(58, 57, 57);
+        font-size: (16/40rem);
+        vertical-align:baseline;
+        i{
+            font-size: (14/40rem);
+            color: #999;
+        }
+        
+    }
+}
+// banner 区
+.banner:extend(.w){
+    img{
+        border-radius: (20/40rem);
+        width: 100%;
+    }
+}
+// 菜单区
+.choice:extend(.w){
+    height: (329/40rem);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:space-evenly;
+    a{
+        width: (327/40rem);
+        height: (104/40rem);
+        color:white;
+        border-radius: 10px;
+        line-height:(104/40rem);
+        font-size: (18/40rem);
+        i{
+            margin: 0 (28/40rem) 0 (38/40rem) ;
+        }
+    }
+    .mobile{
+        background-color: rgb(241, 171, 41);
+    }
+    .css{
+        background-color: rgb(23, 127, 247);
+    }
+    .cpanel{
+        background-color: rgba(250, 116, 82, 0.938);
+    }
+    .python{
+        background-color: rgb(252, 55, 55);
+    }
+}
+// 推送区 内容
+.publish:extend(.w){
+    height: (393/40rem);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin-bottom: (46/40rem);
+    .title-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2{
+            font-size: (33/40rem);
+            color: rgb(3, 25, 66);
+            border-left: (5/40rem) solid rgb(18, 83, 202);
+            padding-left: 5px;
+        }
+        a{
+            color: rgb(65, 65, 65);
+            font-size: (28/40rem);
+            i{
+                font-size: (20/40rem);
+            }
+        }
+    }
+    // 设置每一个块
+    .item-list{
+        width: (720/40rem);
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        overflow: auto;
+        
+    }
+    .item{
+        margin-bottom: (20/40rem);
+        width: (320/40rem);
+        height: (324/40rem);
+        background-color: white;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+        border-radius: 10px;
+        padding: (20/40rem);
+        box-sizing: border-box;
+        margin-right: (46/40rem);
+        display: flex;
+        flex-flow: column;
+        flex:none;
+        justify-content: space-evenly;
+        img{
+            width: 100%;
+        }
+        .course-name{
+            font-size: (30/40rem);
+            color: rgb(39, 39, 39);
+        }
+        // 用户昵称设置
+        .user-info{
+            display: flex;
+            justify-content: flex-start;
+            .avatar{
+                width: (42/40rem);
+                flex-grow: 0;
+                margin-right: 6px;
+                img{
+                    border-radius: 50%;
+                }
+            }
+            .nickname{
+                font-size: (24/40rem);
+                color: rgb(97, 97, 97);
+            }
+        }
+    }
+}

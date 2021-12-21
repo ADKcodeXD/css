@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>过渡动画</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <style>
+        .box1{
+            width: 800px;
+            height: 800px;
+            background-color: blueviolet;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: brown;
+            animation-name: box1;
+            animation-duration: 2s;
+            animation-iteration-count: 1;
+            /* 一直执行动画 */
+            animation-direction: alternate;
+            /* 运行方向 reverse就是反转关键帧 */
+            /* alternate 乒乓循环模式 */
+
+            animation-play-state: running;
+            /* 动画的停止和播放状态 */
+            animation-fill-mode: forwards;
+            /* 动画 ：关键帧 */
+            /* ease缓入缓出 linear 线性 */
+
+            /* transition-property: ; */
+            /* transition-duration ; */
+            /* transition-timing-function: ; */
+            /* transition-delay: ; */
+        }
+        @keyframes box1{
+            form{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: 700px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>

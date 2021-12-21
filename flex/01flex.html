@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <title>flex布局简介</title>
+    <style>
+        /* flex盒子 代替浮动来进行布局 */
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(146, 7, 7);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 800px;
+            
+            border:solid red 10px;
+            display: flex;
+            /* 弹性容器的设置方式 */
+            flex-direction: row;
+            /* 指定弹性元素的排列方式 */
+            flex-wrap: wrap;
+        }
+        li{
+            width: 200px;
+            
+            line-height: 100px;
+            list-style: none;
+            font-size: 30px;
+            text-align: center;
+            background-color: blue;
+            /* display: flex; */
+            /* flexgrow  */
+            flex-basis: 100px;
+            
+        }
+        li:nth-child(2){
+            background-color: crimson;
+            
+        }
+        li:nth-child(3){
+            background-color: darkgoldenrod;
+            flex-shrink: 0;
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <!-- 弹性元素的直接子元素才是弹性子元素 -->
+        <li>1
+            
+        </li>
+        <li>2
+            
+        </li>
+        <li>3
+            
+        </li>
+    </ul>
+</body>
+</html>
